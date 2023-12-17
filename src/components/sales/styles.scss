@@ -29,4 +29,22 @@
         text-align: center;
         padding-top: 20px;
     }
+
+    .invoice-content{
+        text-align: right;
+        padding-top: 30px;
+
+        .invoice-item{
+            display: flex;
+            padding: 5px 0;
+
+            .invoice-label{
+                flex: 1;
+            }
+
+            .invoice-value{
+                width: 120px;
+            }
+        }
+    }
 }
