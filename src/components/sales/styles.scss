@@ -1,0 +1,32 @@
+.sales-order{
+    width: 500px;
+    margin: 30px auto;
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 20px;
+
+    .sales-order-header{
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .order-inputs{
+        .order-input{
+            display: flex;
+            padding: 10px 0;
+
+            .items-name{
+                width: 200px;
+            }
+            .items-value{
+                flex: 1;
+            }
+        }        
+    }
+    .submit-button{
+        text-align: center;
+        padding-top: 20px;
+    }
+}
