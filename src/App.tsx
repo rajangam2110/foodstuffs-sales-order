@@ -1,9 +1,10 @@
 import './App.css';
+import SalesOrder from './components/sales/SalesOrder';
 
 function App() {
   return (
     <div className="App">
-        Sales Order application.
+        <SalesOrder></SalesOrder>
     </div>
   );
 }
