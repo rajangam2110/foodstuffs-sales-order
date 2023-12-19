@@ -16,13 +16,18 @@ export default function SalesOrder() {
         console.log(invoice);
     }
 
+    function setItemsCountAndCalculate(itemsCount: number) {
+        setItemsCount(itemsCount);
+        calculateTotal();
+    }
+
     return (
         <div className="sales-order">
             <div className="sales-order-header">Sales Order</div>
             <div className="order-inputs">
                 <div className="order-input">
                     <div className="items-name">How many items</div>
-                    <div className="items-value"><input type="number" name="itemsCount" value={itemsCount} onChange={e => setItemsCount(parseInt(e.target.value))}/></div>
+                    <div className="items-value"><input type="number" name="itemsCount" value={itemsCount} onChange={e => setItemsCountAndCalculate(parseInt(e.target.value))}/></div>
                 </div>
                 <div className="order-input">
                     <div className="items-name">Price per item</div>
